@@ -35,6 +35,7 @@ body {
   z-index: -1;
 }
 
+
 a {
   text-decoration: none;
   color: #fff;
@@ -128,40 +129,22 @@ a:focus {
 }
 
 .containereu {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 8vh;
+  display: flex;
+  flex-direction: column;
+  
 }
 
 .eu {
-  max-width: 60%;
+  max-width: 80%;
   margin: 0 auto;
-  display: flex;
-  font-family:"Roboto" ;
-  background: #111;
-  border: 0.2vh solid #ff00ff;
-  border-radius: 1vh;
-  box-shadow: 0 0 3vh #ff00ff88;
-}
-
-.eu:hover{
-  box-shadow: 0 0 5vh #ff00ff88;
-}
-
-.eup {
-  font-size: clamp(0.8rem,2vw,1.5rem);
-  padding: 2rem;
+  padding: 1rem;
+  margin-bottom: 2rem;
+  flex-grow: 1;
+  background-image: linear-gradient(90deg,#dadada,#440344);
+  border: 1px solid #747474;
 }
 
 
-.eu1 {
-  height: 25vh;
-}
-
-.eu2 {
-  height: 40vh;
-  margin-bottom: 5rem;
-}
 
 
 
