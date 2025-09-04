@@ -41,9 +41,6 @@ a {
   color: #fff;
 }
 
-a:focus {
-  transition: 0.5s step-end;
-}
 
 .sumario {
   position: fixed;
@@ -60,6 +57,7 @@ a:focus {
   opacity: 0.6;
   transition: 0.5s ease-out;
 }
+
 
 @media screen and (max-width:900px){
   .sumario {
@@ -135,15 +133,22 @@ a:focus {
 }
 
 .eu {
-  max-width: 80%;
+  width: 80%;
   margin: 0 auto;
   padding: 1rem;
   margin-bottom: 2rem;
   flex-grow: 1;
-  background-image: linear-gradient(90deg,#dadada,#440344);
-  border: 1px solid #747474;
+  border-left: 2px solid;
+  background-image: linear-gradient(90deg,#000,#980b98);
+  border-left-color: #dadada;
+  border-radius: 1vw;
+  box-shadow: 0 0 0.8em #720d72;
 }
 
+.eu:hover {
+  transition: 0.3s ease-in;
+  transform: scale(1.02);
+}
 
 
 
