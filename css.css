@@ -15,6 +15,11 @@ html {
   box-sizing: border-box;
 }
 
+a {
+  color: white;
+  text-decoration: none;
+}
+
 body {
   color: #fff;
   background-color: #000000;
@@ -32,69 +37,52 @@ body {
   left: 0;
   top: 0;
   object-fit: cover;
-  z-index: -1;
+  z-index: -99;
 }
 
+/* Start Summary */
 
-a {
-  text-decoration: none;
-  color: #fff;
-}
-
-
-.sumario {
+.containersummary {
+  width: 2rem;
+  height: 2rem;
   position: fixed;
-  padding-bottom: 6vh;
-  width: 60%;
-  height: 0vh;
-  margin-left: 50%;
-  transform: translateX(-50%);
-  padding-left: 5vw;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  z-index: 10;
-  opacity: 0.6;
-  transition: 0.5s ease-out;
+  top: 2vw;
+  right: 2vw;
+}
+
+.toposummary {
+  padding-top: 0.7rem;
+}
+
+.containersummary img {
+  max-width: 2rem;
+  margin-top: 4px;
+  margin-left: 12px;
+}
+
+.itens {
+  display: none;
+  text-align: center;
+}
+
+.containersummary:hover {
+  transition: 0.4s ease;
+  background-color: #e4e2e2;
+  width: 10rem;
+  height: 16rem;
+  border-radius: 2rem;
+}
+
+.containersummary:hover .itens{
+  font-family: "Story Script";
+  font-size: 1.3rem;
+  display: block;
+  color: #720d72;
+  margin-bottom: 0.7rem;
 }
 
 
-@media screen and (max-width:900px){
-  .sumario {
-    width: 60vh;
-    height: 10vh;
-}
-}
-
-.sumario:hover {
-  position: fixed;
-  width: 100%;
-  height: 12vh;
-  padding-left: 5vw;
-  padding-top: 10vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 4%;
-  z-index: 10;
-  transition: 0.5s ;
-  opacity: 1;
-
-}
-
-
-.imagem2 {
-  max-width: 35%;
-  border-radius: 50%;
-  box-shadow: 0 0 1vw 0.7vw black;
-  opacity: 0.9;
-}
-
-.imagem2:hover {
-  opacity: 1;
-  border: 0.4vh solid #980b98;
-  transition: 0.2s ease-in-out;
-}
+/* End Summary */
 
 .titulo {
   font-size: clamp(3vw,4vw,5vw);
@@ -133,6 +121,9 @@ a {
 }
 
 .eu {
+  color: white;
+  text-align: left;
+  cursor: pointer;
   width: 80%;
   margin: 0 auto;
   padding: 1rem;
@@ -143,17 +134,47 @@ a {
   border-left-color: #dadada;
   border-radius: 1vw;
   box-shadow: 0 0 0.8em #720d72;
+  transition: 0.3s ease-in-out;
 }
+
 
 .eu:hover {
   transition: 0.3s ease-in;
   transform: scale(1.02);
+  font-size: 1.8rem;
+}
+
+.anime:hover {
+  width: 90%;
+  height: 20vh;
+  background-image: url(img/deathnote.jpg);
+  background-position: top;
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: #000;
+  font-weight: 800;
 }
 
 
+.ragnarbackground:hover {
+  width: 90%;
+  height: 20vh;
+  background-image: url(img/backgroundragnar.JPEG);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: #ffffff;
+  font-weight: 800;
+}
 
-
-
-
-
-
+.game:hover {
+  width: 90%;
+  height: 20vh;
+  background-image: url(img/ittakes.png);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: #ffffff;
+  font-weight: 800;
+  transition: 0.6s ease;
+}
